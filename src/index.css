@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+	--bg-color: #f6f6f6;
+	--container-color: #FFFFFF;
+	--main-color: #1B814C;
+	--stroke-color: #DCDCDC;
+	--font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: #1B814C;
+	font-weight: 700;
+}
+
+body {
+	font-family: "Inter", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	max-width: 360px !important;
+	width: 100%;
+	/*padding: 0 16px;*/
+	min-height: 100vh;
+	overflow-x: hidden;
+	background-color: var(--bg-color);
+	background-image: linear-gradient(
+			180deg,
+			rgba(246, 246, 246, 1) 0%,
+			rgba(234, 234, 234, 1) 100%
+	);
+}
+
+.default-container {
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	gap: 16px;
+	background-color: var(--container-color);
+	border: solid 1px var(--stroke-color);
+	border-radius: 8px;
+}
+
+input {
+	outline-color: #DCDCDC;
+	padding: 12px;
+	border: solid 1px #DCDCDC;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+button {
+	background-color: #1B814C;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 16px;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #199655;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	background-image: url("./assets/images/CFBackground_image.png");
+	background-repeat: repeat-y;
+	animation: moveBackground 200s linear infinite;
+	will-change: transform;
+	z-index: -1;
+}
+
+@keyframes moveBackground {
+	0% {
+		background-position: 0 100%;
+	}
+	50% {
+		background-position: 0 -100%;
+	}
+	100% {
+		background-position: 0 100%;
+	}
+}

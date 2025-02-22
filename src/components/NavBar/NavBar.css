@@ -1,0 +1,9 @@
+.navbar-container{
+	height: 72px;
+	background-color: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	box-sizing: border-box;
+}
