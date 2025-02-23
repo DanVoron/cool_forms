@@ -1,31 +1,85 @@
 .main-page {
-	padding: 32px;
+	padding: 16px;
 	background-color: var(--container-color);
-	margin: 0 20px;
 	align-items: flex-start;
+	width: 100%;
+	box-sizing: border-box
 }
 
-.mainpage-container{
+.mainpage-container {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 	margin: 8px 0px;
+	padding: 0 16px;
 }
 
-.forms-container{
+.forms-container {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: start;
 	flex-wrap: wrap;
 	width: 100%;
-	gap:8px;
+	gap: 8px;
 }
 
-.main-form-button{
-	width: 89px;
-	height: 89px;
+.main-form-button {
+	width: 48%;
+	height: 100%;
+	min-height: 140px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	position: relative;
+	box-sizing: border-box;
 
+}
+
+.sharesvg-style{
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+.big-text-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.small-text-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 16px;
+
+}
+
+.mainpage-myanswers{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+	padding: 16px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+	font-size: 16px;
+	text-align: center;
+}
+
+.mainpage-myanswers-container{
+	gap: 0;
+	width: 100%;
+}
+
+@media (min-width: 1024px) {
+	.mainpage-container {
+		align-items: center;
+		width: 100%;
+	}
 }

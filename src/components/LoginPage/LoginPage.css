@@ -1,8 +1,11 @@
-.main-page {
+.login-page {
 	padding: 32px;
-	align-items: center;
+	width: 100%;
 	background-color: var(--container-color);
-	margin: 0 16px;
+	margin: 0 16px 50px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .login-container{
@@ -16,6 +19,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 24px;
+	width: 100%;
 }
 
 button {
@@ -28,5 +32,15 @@ button {
 	flex-direction: column;
 	align-items: center;
 	color: #1B814C;
+	gap: 8px;
+	width: 100%;
+}
+
+.login-logo-container{
+	display: flex;
 	gap: 4px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }

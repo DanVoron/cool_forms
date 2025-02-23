@@ -8,10 +8,10 @@ import {
 
 import {LoginPage} from './components/LoginPage/LoginPage.jsx';
 import {MainPage} from './components/MainPage/MainPage.jsx';
-import {NavBar} from './components/NavBar/NavBar.jsx';
 import {ProfilePage} from './components/ProfilePage/ProfilePage.jsx';
 import {FormsPage} from './components/FormsPage/FormsPage.jsx';
 import {ErrorPage} from './components/ErrorPage/ErrorPage.jsx';
+import {NewFormsPage} from './components/NewFormsPage/NewFormsPage.jsx'
 
 function ProtectedRoute({children}) {
     // const {auth, setAuth, setIsHolop, isHolop} = useContext(LoginContext);
@@ -73,6 +73,14 @@ const router = createBrowserRouter([
         element: (
             <ProtectedRoute>
                 <FormsPage/>
+            </ProtectedRoute>
+        ),
+        errorElement: <ErrorPage/>
+    },{
+        path: '/NewFormsPage',
+        element: (
+            <ProtectedRoute>
+                <NewFormsPage/>
             </ProtectedRoute>
         ),
         errorElement: <ErrorPage/>

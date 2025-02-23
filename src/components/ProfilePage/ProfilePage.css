@@ -1,0 +1,14 @@
+.profile-add-container{
+	display: flex;
+	gap: 8px;
+	width: 100%;
+}
+
+.profile-input-container{
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	width: 100%;
+	gap:8px;
+}
