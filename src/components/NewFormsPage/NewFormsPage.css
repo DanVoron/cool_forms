@@ -1,0 +1,52 @@
+.toggle-switch {
+	position: relative;
+	width: 60px;
+	height: 34px;
+}
+
+.toggle-switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #ccc;
+	border-radius: 34px;
+	transition: background-color 0.2s;
+}
+
+.form-answers-container {
+	outline: solid #DCDCDC;
+	padding: 16px 4px 16px 4px;
+	box-sizing: border-box;
+	margin-top: 2px;
+	font-size: 16px;
+
+}
+
+.form-answers-list-container{
+	width: 100%;
+	gap: 4px;
+}
+
+.slider::before {
+	content: "";
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:checked + .slider::before {
+	transform: translateX(26px);
+}

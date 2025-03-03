@@ -1,9 +1,32 @@
 .main-page {
 	padding: 16px;
 	background-color: var(--container-color);
-	align-items: flex-start;
 	width: 100%;
-	box-sizing: border-box
+	box-sizing: border-box;
+	justify-content: center;
+	align-content: center;
+}
+
+.profile-container {
+	flex-direction: row;
+	align-items: center;
+}
+
+.mainpage-welcome-text {
+	font-size: 12px;
+	font-weight: bold;
+	color: #5F5F5F;
+}
+
+.mainpage-name-text {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.arrow-button-position {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 .mainpage-container {
@@ -12,12 +35,14 @@
 	gap: 8px;
 	margin: 8px 0px;
 	padding: 0 16px;
+	box-sizing: border-box;
 }
 
 .forms-container {
 	display: flex;
 	align-items: center;
-	justify-content: start;
+	justify-content: flex-start;
+	justify-self: center;
 	flex-wrap: wrap;
 	width: 100%;
 	gap: 8px;
@@ -25,7 +50,7 @@
 
 .main-form-button {
 	width: 48%;
-	height: 100%;
+	aspect-ratio: 1;
 	min-height: 140px;
 	display: flex;
 	align-items: center;
@@ -34,12 +59,13 @@
 	position: relative;
 	box-sizing: border-box;
 
+	cursor: pointer;
 }
 
-.sharesvg-style{
+.sharesvg-style {
 	position: absolute;
-	left: 15px;
-	bottom: 15px;
+	right: 8px;
+	bottom: 12px;
 }
 
 .big-text-container {
@@ -59,7 +85,7 @@
 
 }
 
-.mainpage-myanswers{
+.mainpage-myanswers {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -72,9 +98,68 @@
 	text-align: center;
 }
 
-.mainpage-myanswers-container{
+.mainpage-myanswers-container {
 	gap: 0;
 	width: 100%;
+}
+
+.profile-image-style {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+}
+
+.forms-container {
+	position: relative;
+}
+
+.menu-button {
+	background: none;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	color: grey;
+}
+
+.menu-button:active {
+	background-color: #00000000;
+}
+
+.menu-button:hover {
+	background-color: #00000000;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 40px;
+	left: 16px;
+	background-color: white;
+	border-color: grey;
+	padding: 8px;
+	border: 1px solid #DCDCDC;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.dropdown-menu button {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	border: none;
+	background: none;
+	text-align: left;
+	cursor: pointer;
+	color: grey;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.dropdown-menu button:hover {
+	background-color: #f0f0f0;
 }
 
 @media (min-width: 1024px) {

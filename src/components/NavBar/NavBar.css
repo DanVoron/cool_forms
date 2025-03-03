@@ -1,10 +1,70 @@
-.navbar-container{
+.navbar-container {
 	height: 72px;
-	background-color: white;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-
 	padding: 8px;
 	box-sizing: border-box;
+	max-width: 500px;
+	position: relative;
+	background-color: white;
+}
+
+.navbar-back-button{
+	position: absolute;
+	left: 24px;
+}
+
+.navbar-logout-image{
+	width: 28px;
+	height: 28px;
+	aspect-ratio: 1;
+}
+
+.navbar-question-button {
+	width: 100%;
+}
+
+.navbar-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.navbar-question-container {
+	padding: 4px 8px 4px 8px;
+	box-sizing: border-box;
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.navbar-buttons-container {
+	padding: 4px 8px 4px 8px;
+	height: 100%;
+	display: flex;
+	gap: 8px;
+	max-width: 500px;
+	width: 100%;
+}
+
+.navbar-selected-button, .navbar-selected-button:hover {
+	background-color: var(--main-color);
+}
+
+.navbar-unselected-button, .navbar-unselected-button:hover {
+	background-color: white;
+	color: black;
+	border: 1px solid #E3E3E3;
+}
+
+@media (min-width: 500px) {
+	.navbar-container{
+		max-width: 100%;
+	}
 }

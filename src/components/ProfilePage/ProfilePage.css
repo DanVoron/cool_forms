@@ -12,3 +12,10 @@
 	width: 100%;
 	gap:8px;
 }
+
+.profile-image-continaer{
+	align-items: center;
+}
+.fasP{
+	aspect-ratio: 1;
+}

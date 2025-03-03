@@ -1,3 +1,65 @@
-.formspage-button{
+.formspage-button {
 	box-sizing: border-box;
+}
+
+.formspage-question-container {
+	gap: 12px;
+}
+
+.custom-checkbox {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #797979;
+	background-color: #FFFFFF;
+	cursor: pointer;
+	position: relative;
+	margin-right: 8px;
+}
+
+.custom-checkbox:checked {
+	background-color: #1B814C;
+	border: 2px solid #1B814C;
+}
+
+.custom-checkbox:checked::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.custom-radio {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #797979;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+}
+
+.custom-radio:checked {
+	background-color: #1B814C;
+	border: 2px solid #1B814C;
+}
+
+.custom-radio:checked::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
 }
